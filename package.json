@@ -1,0 +1,62 @@
+{
+  "name": "gulp-rev-format",
+  "version": "1.0.0",
+  "description": "Formatting options for static revisioned assets (gulp-rev): unicorn.css => unicorn-<prefix>d41d8cd98f<suffix>.css",
+  "license": "MIT",
+  "repository": "atamas101/gulp-rev-format",
+  "author": {
+    "name": "Andrei Tamas",
+    "email": "andrei.tamas101@gmail.com",
+    "url": "https://github.com/atamas101"
+  },
+  "contributors": [
+    {
+      "name": "Luke Edwards",
+      "email": "luke@lukeed.com",
+      "url": "https://lukeed.com"
+    }
+  ],
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "standard && mocha"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "gulpplugin",
+    "rev",
+    "revving",
+    "revision",
+    "hash",
+    "optimize",
+    "version",
+    "versioning",
+    "cache",
+    "expire",
+    "static",
+    "asset",
+    "assets",
+    "format"
+  ],
+  "dependencies": {
+    "gulp-util": "^3.0.0",
+    "modify-filename": "^1.1.0",
+    "object-assign": "^4.0.1",
+    "through2": "^2.0.0",
+    "vinyl-file": "^2.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.5.3",
+    "standard": "^7.1.2",
+    "standard-format": "^2.2.1"
+  },
+  "standard": {
+    "envs": [
+      "node",
+      "mocha"
+    ]
+  }
+}
