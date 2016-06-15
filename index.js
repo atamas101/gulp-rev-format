@@ -26,7 +26,7 @@ module.exports = function (opts) {
       cb(null, file)
       return
     }
-    console.log(file)
+
     // Search for file.revOrigPath and file.revHash that would have been added by gulp-rev
     if ((typeof file.revOrigPath === 'undefined') || (typeof file.revHash === 'undefined')) {
       cb(new gutil.PluginError('gulp-rev-format', 'File was not passed through "gulp-rev"'))
