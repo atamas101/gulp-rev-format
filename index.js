@@ -1,5 +1,5 @@
 'use strict'
-var gutil = require('gulp-util')
+var PluginError = require('plugin-error');
 var modifyFilename = require('modify-filename')
 var objectAssign = require('object-assign')
 var through = require('through2')
@@ -29,7 +29,7 @@ module.exports = function (opts) {
 
     // Search for file.revOrigPath and file.revHash that would have been added by gulp-rev
     if ((typeof file.revOrigPath === 'undefined') || (typeof file.revHash === 'undefined')) {
-      cb(new gutil.PluginError('gulp-rev-format', 'File was not passed through "gulp-rev"'))
+      cb(new PluginError('gulp-rev-format', 'File was not passed through "gulp-rev"'))
       return
     }
 
